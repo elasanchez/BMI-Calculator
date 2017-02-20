@@ -101,7 +101,7 @@
                     </view>
                     <connections>
                         <outlet property="currentUnits" destination="upH-yF-8Og" id="ELD-2g-Tf2"/>
-                        <outlet property="displayImageView" destination="Cif-jH-of5" id="UPz-Gf-S1K"/>
+                        <outlet property="displayImageView" destination="Cif-jH-of5" id="Crd-WF-dp1"/>
                         <outlet property="heightTextField" destination="2Ad-KT-QNa" id="8QJ-YM-hKK"/>
                         <outlet property="resultCategoryLabel" destination="6jb-ML-4zD" id="eeZ-Ww-LyM"/>
                         <outlet property="weightTextField" destination="4yS-xU-CUt" id="lUs-Hx-NzZ"/>

@@ -11,10 +11,11 @@ import Foundation
 
 class ViewController: UIViewController {
     
-    //    override func viewDidLoad() {
-    //        super.viewDidLoad()
-    //        // Do any additional setup after loading the view, typically from a nib.
-    //    }
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            // Do any additional setup after loading the view, typically from a nib.
+          
+    }
     //
     //    override func didReceiveMemoryWarning() {
     //        super.didReceiveMemoryWarning()
@@ -28,8 +29,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultCategoryLabel: UILabel!
     @IBOutlet weak var displayImageView: UIImageView!
     @IBOutlet weak var currentUnits: UILabel!
-    
-    
+
     var metricBool = true
     
     //MARK:Functions
@@ -76,6 +76,7 @@ class ViewController: UIViewController {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Mild Thinness"
             } else if bmiDouble < 25 {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Normal Range"
+                  displayImageView.image = UIImage(named: "panther")
             } else if bmiDouble < 30 {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Overweight"
             } else if bmiDouble < 35 {
@@ -88,12 +89,6 @@ class ViewController: UIViewController {
            
         }
     }
-    
-    
-    
-    
-    
-    
     
 }
 

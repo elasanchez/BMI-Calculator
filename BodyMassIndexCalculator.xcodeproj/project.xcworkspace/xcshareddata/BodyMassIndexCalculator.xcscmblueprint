@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "60A86667301BF13E420091515F20B43A74E47585",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "60A86667301BF13E420091515F20B43A74E47585" : 9223372036854775807,
+    "9B1151B080CDDE9C36251A557C21B400D717403D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "64008FF7-3A8F-47D2-BE9A-BD0646F25500",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "60A86667301BF13E420091515F20B43A74E47585" : "BMI-Calculator\/",
+    "9B1151B080CDDE9C36251A557C21B400D717403D" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BodyMassIndexCalculator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BodyMassIndexCalculator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/elasanchez\/BMI-Calculator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "60A86667301BF13E420091515F20B43A74E47585"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/elasanchez\/ieee-workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9B1151B080CDDE9C36251A557C21B400D717403D"
+    }
+  ]
+}
