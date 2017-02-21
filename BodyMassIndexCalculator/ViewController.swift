@@ -14,8 +14,7 @@ class ViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
-          
-    }
+                }
     //
     //    override func didReceiveMemoryWarning() {
     //        super.didReceiveMemoryWarning()
@@ -31,6 +30,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentUnits: UILabel!
 
     var metricBool = true
+
     
     //MARK:Functions
     @IBAction func metricSwitch(_ sender: UISwitch) {
@@ -70,21 +70,29 @@ class ViewController: UIViewController {
             
             if bmiDouble < 16.00 {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Severe Thinness"
+                self.displayImageView.image = UIImage(named: "steak")
             } else if bmiDouble < 17.00 {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Moderate Thinness"
+                displayImageView.image = UIImage(named: "steak")
             } else if bmiDouble < 18.50 {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Mild Thinness"
+                displayImageView.image = UIImage(named: "mildthinness")
             } else if bmiDouble < 25 {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Normal Range"
-                  displayImageView.image = UIImage(named: "panther")
             } else if bmiDouble < 30 {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Overweight"
             } else if bmiDouble < 35 {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Obese Class I (Moderate)"
+                self.displayImageView.image = UIImage(named:"OClass" )
+
             } else if bmiDouble  < 40 {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Obese Class II (Severe)"
+                self.displayImageView.image = UIImage(named:"OClass" )
+
             } else {
                 resultCategoryLabel.text = "\(Float(bmiDouble)) Obese Class III (Very Severe)"
+                self.displayImageView.image = UIImage(named:"OClass" )
+
             }
            
         }

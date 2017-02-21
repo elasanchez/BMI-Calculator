@@ -73,9 +73,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cif-jH-of5">
-                                <rect key="frame" x="68" y="294" width="202" height="189"/>
+                                <rect key="frame" x="68" y="294" width="196" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2t-V6-uDM">
                                 <rect key="frame" x="128" y="507" width="64" height="30"/>
@@ -96,12 +97,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recommended food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1n-jQ-lg1">
+                                <rect key="frame" x="84" y="452" width="165" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="currentUnits" destination="upH-yF-8Og" id="ELD-2g-Tf2"/>
-                        <outlet property="displayImageView" destination="Cif-jH-of5" id="Crd-WF-dp1"/>
+                        <outlet property="displayImageView" destination="Cif-jH-of5" id="t57-KH-Qp9"/>
                         <outlet property="heightTextField" destination="2Ad-KT-QNa" id="8QJ-YM-hKK"/>
                         <outlet property="resultCategoryLabel" destination="6jb-ML-4zD" id="eeZ-Ww-LyM"/>
                         <outlet property="weightTextField" destination="4yS-xU-CUt" id="lUs-Hx-NzZ"/>
