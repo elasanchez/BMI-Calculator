@@ -14,7 +14,9 @@ class ViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
-                }
+            inchTextField.isHidden = true
+            apostropeLabel.isHidden = true;
+    }
     //
     //    override func didReceiveMemoryWarning() {
     //        super.didReceiveMemoryWarning()
@@ -30,6 +32,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var displayImageView: UIImageView!
     @IBOutlet weak var currentUnits: UILabel!
 
+    @IBOutlet weak var apostropeLabel: UILabel!
     @IBOutlet weak var statementLabel: UILabel!
     
     
@@ -42,10 +45,15 @@ class ViewController: UIViewController {
         if sender.isOn{
             metricBool = true
             currentUnits.text = "Metric (kg, m)"
+            inchTextField.isHidden = true
+            apostropeLabel.isHidden = true;
+            
         }
         else{
             metricBool = false
             currentUnits.text = "English (lbs, ft)"
+            inchTextField.isHidden = false
+            apostropeLabel.isHidden = false
         }
     }
     
@@ -63,7 +71,8 @@ class ViewController: UIViewController {
         {
             heightDouble = Double(heightTextField.text!)!
             weightDouble = Double(weightTextField.text!)!
-            if(inchTextField.text != "0")
+            
+            if(inchTextField.text != "" && inchTextField.isHidden == false)
             {
                 inchInt = Int(inchTextField.text!)!
                 heightDouble = heightDouble! + Double(inchInt)/12.00
